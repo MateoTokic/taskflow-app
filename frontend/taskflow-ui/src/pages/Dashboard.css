@@ -1,0 +1,274 @@
+.page {
+  min-height: 100vh;
+  background: #0c0e15;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.25rem;
+  background: white;
+  border-bottom: 0.625rem solid #e6e8ef;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 22.5rem 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.sidebar,
+.main {
+  background: white;
+  border: 0.0625rem solid #e6e8ef;
+  border-radius: 0.75rem;
+  padding: 0.875rem;
+  height: calc(100vh - 5.625rem);
+  overflow: auto;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.section-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.muted {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-top: 0.375rem;
+}
+
+.error {
+  margin: 0.75rem 1rem 0;
+  padding: 0.625rem;
+  background: #ffecec;
+  border: 0.0625rem solid #ffbdbd;
+  border-radius: 0.625rem;
+  color: #9b1c1c;
+  font-size: 0.8125rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.625rem;
+}
+
+.project-item {
+  text-align: left;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #e6e8ef;
+  background: #fff;
+  cursor: pointer;
+}
+
+.project-item.active {
+  border-color: #7aa7ff;
+  background: #f2f7ff;
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 0.8125rem;
+}
+
+.project-desc {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  margin-top: 0.25rem;
+}
+
+.divider {
+  height: 0.0625rem;
+  background: #e6e8ef;
+  margin: 0.875rem 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.625rem;
+}
+
+.task-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 0.625rem;
+  margin-top: 0.75rem;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 0.125rem;
+}
+
+.input {
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #d9dce6;
+  outline: none;
+}
+
+.btn-primary {
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #2b5cff;
+  background: #2b5cff;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn-secondary-full {
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 0.0625rem solid #22c55e;
+  background: #22c55e;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+}
+
+.btn-secondary-full:hover {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+.btn-danger-full {
+  margin-top: 0.625rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #ff4d4f;
+  background: #ff4d4f;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+}
+
+.btn-small {
+  padding: 0.375rem 0.625rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #d9dce6;
+  background: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-top: 0.875rem;
+}
+
+.task-row {
+  padding: 0.625rem;
+  border: 0.0625rem solid #e6e8ef;
+  border-radius: 0.625rem;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  cursor: pointer;
+}
+
+.task-title {
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.task-desc {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  margin-top: 0.375rem;
+  padding-left: 1.625rem;
+}
+
+.info {
+  margin: 0.75rem 1rem 0;
+  padding: 0.625rem 0.75rem;
+  background: #eef2ff;
+  border: 0.0625rem solid #c7d2fe;
+  color: #1f2937;
+  border-radius: 0.625rem;
+  font-size: 0.8125rem;
+}
+
+.user-menu {
+  position: relative;
+}
+
+.user-icon-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999rem;
+  border: 0.0625rem solid #d9dce6;
+  background: white;
+  cursor: pointer;
+  font-size: 1.125rem;
+}
+
+.user-dropdown {
+  position: absolute;
+  right: 0;
+  top: 2.875rem;
+  min-width: 10rem;
+  background: white;
+  border: 0.0625rem solid #e6e8ef;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.08);
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+.dropdown-item {
+  width: 100%;
+  text-align: left;
+  padding: 0.625rem 0.625rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 0.625rem;
+  font-weight: 600;
+}
+
+.dropdown-item:hover {
+  background: #f4f6f8;
+}

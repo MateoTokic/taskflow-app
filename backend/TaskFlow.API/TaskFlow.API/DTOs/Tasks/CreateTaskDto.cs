@@ -1,16 +1,18 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace TaskFlow.API.Entities
+namespace TaskFlow.API.DTOs.Tasks
 {
-    public class TaskItem
+    public class CreateTaskDto
     {
-        public Guid Id { get; set; } = Guid.NewGuid();
+        [Required]
+        [MaxLength(200)]
+        public string Title { get; set; } = string.Empty;
+
+        [MaxLength(1000)]
+        public string? Description { get; set; }
 
         [Required]
-        public string Title { get; set; } = string.Empty;
-        public string? Description { get; set; }
-        public bool IsCompleted { get; set; } = false;
         public Guid ProjectId { get; set; }
-        public Project Project { get; set; } = null!;
+
     }
 }

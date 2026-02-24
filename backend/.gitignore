@@ -4,3 +4,4 @@ obj/
 *.suo
 *.vs
 .vscode/
+appsettings.Development.json
